@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Drive Academy | Apprendre à conduire en mode Neo-Brutalist</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700;800&display=swap" rel="stylesheet"/>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'vibrant-yellow': '#FFFF00',
+            'electric-purple': '#8A2BE2',
+            'neo-white': '#FFFFFF',
+            'neo-black': '#000000',
+          },
+          borderWidth: { '3': '3px', '5': '5px' },
+          boxShadow: {
+            'hard': '8px 8px 0px 0px #000000',
+            'hard-lg': '12px 12px 0px 0px #000000',
+          },
+          fontFamily: { 'grotesk': ['"Space Grotesk"', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <style data-purpose="global-styles">
+    body { background-color: #FFFFFF; font-family: 'Space Grotesk', sans-serif; color: #000000; }
+    .neo-border { border: 4px solid #000000; }
+    .neo-border-thick { border: 6px solid #000000; }
+    @keyframes float {
+      0% { transform: translate(0, 0); }
+      50% { transform: translate(-10px, -10px); }
+      100% { transform: translate(0, 0); }
+    }
+    .animate-float { animation: float 4s ease-in-out infinite; }
+    .btn-brutal {
+      background-color: #FFFF00;
+      border: 3px solid #000000;
+      box-shadow: 4px 4px 0px 0px #000000;
+      transition: all 0.1s;
+      font-weight: 800;
+      text-transform: uppercase;
+      padding: 1rem 2rem;
+    }
+    .btn-brutal:hover { box-shadow: 0px 0px 0px 0px #000000; transform: translate(4px, 4px); }
+  </style>
+</head>
+<body class="overflow-x-hidden">
+
+<nav class="sticky top-0 z-50 bg-white border-b-5 border-black p-4 flex justify-between items-center">
+  <div class="text-3xl font-extrabold tracking-tighter">
+    DRIVE ACADEMY<span class="text-electric-purple">.</span>
+  </div>
+  <div class="hidden md:flex gap-8 font-bold uppercase text-lg">
+    <a class="hover:underline decoration-4 underline-offset-4" href="#vehicules">Véhicules</a>
+    <a class="hover:underline decoration-4 underline-offset-4" href="#equipe">Équipe</a>
+    <a class="hover:underline decoration-4 underline-offset-4" href="#offres">Forfaits</a>
+  </div>
+  <button class="btn-brutal text-sm md:text-base">Inscription</button>
+</nav>
+
+<header class="relative bg-vibrant-yellow border-b-5 border-black py-20 px-6 overflow-hidden">
+  <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12">
+    <div class="flex-1 z-10">
+      <h1 class="text-6xl md:text-9xl font-black uppercase leading-[0.9] mb-8">
+        Conduis <br/> <span class="bg-neo-black text-white px-4 inline-block -rotate-2">Vite.</span> <br/> Apprends <br/> <span class="bg-electric-purple text-white px-4 inline-block rotate-3">Mieux.</span>
+      </h1>
+      <p class="text-2xl font-bold mb-10 max-w-lg leading-tight">
+        L'auto-école nouvelle génération. Zéro ennui, 100% réussite. Style radical pour permis éclair.
+      </p>
+      <button class="bg-electric-purple text-white border-4 border-black shadow-hard p-6 text-xl font-black uppercase hover:shadow-none translate-x-[-2px] hover:translate-x-[6px] hover:translate-y-[6px] transition-all">
+        Démarre l'aventure
+      </button>
+    </div>
+    <div class="flex-1 relative">
+      <div class="neo-border-thick bg-white p-4 rotate-6 shadow-hard-lg max-w-md animate-float">
+        <img alt="Voiture stylisée" class="w-full neo-border" src="https://lh3.googleusercontent.com/aida-public/AB6AXuANHZt2S1pjpuJBc24xg4WDjYoWMaA-2SphyVcGGaed8p5ANWYEy1H5GgVcmo7fKnJdpUgKRB80w_kUuNKhcSUuR4KSV6Nej8d_xIGgzjMdKBLjo22oIsE-ORJol3HqRVMe-fdNBa0a0ICYEX-NV7rL2I8Mx0xK3wiZZwNzGR8A3oi8OzZ928pTx1IVeAu_yRvmFc4rpV1HFpVdInWg7QHaymDAPEgw6BfpBvjlj3e665bw7uQ1xCTPjDKYu9VtUudJfu1D_UaNZOI"/>
+        <div class="mt-4 text-center font-black text-2xl uppercase">Prêt à rouler ?</div>
+      </div>
+    </div>
+  </div>
+  <div class="absolute -top-10 -right-10 w-64 h-64 bg-electric-purple border-4 border-black rounded-full opacity-20 -z-0"></div>
+</header>
+
+<section class="py-24 px-6 bg-neo-white border-b-5 border-black" id="vehicules">
+  <div class="max-w-7xl mx-auto">
+    <div class="bg-electric-purple text-white inline-block p-4 neo-border mb-12 rotate-2 shadow-hard">
+      <h2 class="text-5xl font-black uppercase">Nos Bolides</h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mt-8">
+      <div class="bg-vibrant-yellow neo-border-thick p-6 shadow-hard hover:translate-x-[4px] hover:translate-y-[4px] hover:shadow-none transition-all">
+        <div class="w-full aspect-video bg-white neo-border mb-4 overflow-hidden">
+          <img alt="Tesla Model 3" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all" src="http://googleusercontent.com/profile/picture/7"/>
+        </div>
+        <h3 class="text-3xl font-black uppercase">Tesla Model 3</h3>
+        <p class="font-bold text-lg mt-2">100% Électrique. Accélération instantanée. Apprends à dompter le futur.</p>
+      </div>
+      <div class="bg-white neo-border-thick p-6 shadow-hard hover:translate-x-[4px] hover:translate-y-[4px] hover:shadow-none transition-all">
+        <div class="w-full aspect-video bg-electric-purple neo-border mb-4 overflow-hidden">
+          <img alt="Mini Cooper S" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all" src="http://googleusercontent.com/profile/picture/8"/>
+        </div>
+        <h3 class="text-3xl font-black uppercase">Mini Cooper S</h3>
+        <p class="font-bold text-lg mt-2">Nerveuse et agile. La reine absolue pour se faufiler en plein centre-ville.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-24 px-6 bg-vibrant-yellow border-b-5 border-black" id="equipements">
+  <div class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-16 items-center">
+    <div class="lg:w-1/2">
+      <h2 class="text-6xl md:text-8xl font-black uppercase leading-none mb-8">Matos de <br/> <span class="bg-white px-4">Pointe.</span></h2>
+      <div class="space-y-8">
+        <div class="bg-white neo-border p-6 shadow-hard flex gap-6 items-center">
+          <div class="text-5xl">🏎️</div>
+          <div>
+            <h4 class="text-2xl font-black uppercase">Flotte Premium</h4>
+            <p class="font-bold">Apprends sur les meilleures caisses. Confort, style et technologie de pointe.</p>
+          </div>
+        </div>
+        <div class="bg-electric-purple text-white neo-border p-6 shadow-hard flex gap-6 items-center">
+          <div class="text-5xl">📱</div>
+          <div>
+            <h4 class="text-2xl font-black uppercase">L'App "Maestro"</h4>
+            <p class="font-bold">Révise ton code sur ton canapé, tes résultats sont synchronisés en direct avec ton moniteur.</p>
+          </div>
+        </div>
+        <div class="bg-white neo-border p-6 shadow-hard flex gap-6 items-center">
+          <div class="text-5xl">🕶️</div>
+          <div>
+            <h4 class="text-2xl font-black uppercase">Simulateur VR</h4>
+            <p class="font-bold">Teste les situations d'urgence sans aucun risque réel. Immersion totale.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="lg:w-1/2 grid grid-cols-2 gap-4">
+      <div class="neo-border-thick bg-white p-2 shadow-hard rotate-3">
+        <img alt="App Mobile interface" class="w-full neo-border" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIsNMNmFWHntF0O-viq32iWbClWgeUNCVKkSf9yFgEHG0Jiho6nld7DY37znGwklY_VUO87O9ff0Yf7p59dK2MQP48JwwAG-15fTVY0gHbYs5W4tgM1MVqUGWUvhhBat8oM6Mhf1LCRF0htBWjOjdke9X3xv7E2Ob6WlO5jCZd-worczoEhZ7Leaicrgj3KrX2Xpx4At4htJh_r1HK4_ordKVIqkAbJAbg_ri6jib8J7wOD3RsbIiHlEQ-I1PQDVP7SvdQ9V6zbco"/>
+      </div>
+      <div class="neo-border-thick bg-electric-purple p-2 shadow-hard -rotate-6 mt-12">
+        <img alt="Tableau de bord voiture" class="w-full neo-border" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAk1yWQB2zKctNr2Zfz8-BDiN61TlehA4dVr3b9SwKHYTNWUEHpBLUrF_HGw7YEYdyL758oeO07XZHFfKhlEKaerk7L1g1VSAm8y9L1UelMX76eDvB6wOsZeC-fJed_uc9wOR-7mAPANcLfqz5tAMnub14G9qKi-QRVAtOKA_LOZLZGt8NZw03zs-LQXKBqNgUm2c5U19VAfblQQSNGhRc7htXmSVTw9xSfeaXL9DZVu0xAJ0CsP-9YiLbP8DQmx4naveVU6-_JVA0"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-24 px-6 bg-electric-purple border-b-5 border-black" id="equipe">
+  <div class="max-w-5xl mx-auto">
+    <div class="bg-white inline-block p-4 neo-border mb-12 -rotate-2">
+      <h2 class="text-5xl font-black uppercase">Le Staff</h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-16 mt-12 max-w-3xl mx-auto">
+      <div class="relative group">
+        <div class="absolute inset-0 bg-vibrant-yellow border-4 border-black -rotate-6 transition-transform group-hover:rotate-0"></div>
+        <div class="relative z-10 p-4 text-center">
+          <div class="w-full aspect-square bg-neo-white neo-border overflow-hidden mb-4">
+            <img alt="Marc" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxY_5KMLUojJPOySPXcl_qdtttA0pBbprY59pI3Pfu84Cfxzdwcyn5dvAxDoAM-X-Yjf3ihaRFzyOTNzMeP94hXTCromtIO3X_kCoIvTdL3CkCjJoW9LL9tAcr3mjZhL1jsel60MEPj2enuwPy7BZaS424_eLFtVJagc_fm23BuoWbQ9LwMOHbKy4wGSZP2LP4tQGLXWH2QczktqqrU9Jl17qUnfRF4D45CcnX44kESJj87HyCVF97vYW2BFGF9oI3RM6egWVb9gU"/>
+          </div>
+          <h4 class="bg-black text-white p-2 font-black uppercase text-xl">Marc "Speedy"</h4>
+          <p class="font-bold text-black mt-2">Expert Drift & Ville</p>
+        </div>
+      </div>
+      <div class="relative group">
+        <div class="absolute inset-0 bg-white border-4 border-black rotate-3 transition-transform group-hover:rotate-0"></div>
+        <div class="relative z-10 p-4 text-center">
+          <div class="w-full aspect-square bg-vibrant-yellow neo-border overflow-hidden mb-4">
+            <img alt="Sarah" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4zQ4yyuXbVgBKnQqWXylP9p1Dh1UHW9MknTQtgKq4CTOBSklSMNtLTl7KqalFXIKBjiPJZboXp-dk_j-3RRiCi55AbsfQoU5D8Vb2Xh9fE0BIswxRm-qeZmu31ncd8P8r9e29wPB4S4A4rkD0kvR7mOZRpEdzAXPBD6cewPIxAAnX9pTqutenBYt5YAG8uG-CPfPRPB9y5aqAl3PX9gOazgYuw4FErV58-O4mUF_jH1EaV-3__f5qbqzos42CTYLhAcF6ADiLAnM"/>
+          </div>
+          <h4 class="bg-black text-white p-2 font-black uppercase text-xl">Sarah "Code"</h4>
+          <p class="font-bold text-black mt-2">Reine de la Théorie</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-24 px-6 bg-neo-white" id="offres">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="text-5xl md:text-7xl font-black uppercase mb-16 underline decoration-electric-purple">Nos Forfaits</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+      <div class="card-purple neo-border-thick p-8 shadow-hard flex flex-col gap-6">
+        <h3 class="text-4xl font-black uppercase">Le Flash</h3>
+        <p class="font-bold text-lg">Permis accéléré en 15 jours. Intensif, rapide, brutal.</p>
+        <div class="text-6xl font-black">499€</div>
+        <ul class="font-bold space-y-2"><li>✓ Code illimité</li><li>✓ 20h de conduite</li><li>✓ Support 24/7</li></ul>
+        <button class="mt-auto bg-vibrant-yellow text-black border-4 border-black p-4 font-black uppercase shadow-hard hover:shadow-none transition-all">Choisir</button>
+      </div>
+      <div class="card-yellow neo-border-thick p-8 shadow-hard flex flex-col gap-6 scale-105 relative bg-vibrant-yellow">
+        <div class="absolute -top-6 left-1/2 -translate-x-1/2 bg-neo-black text-white px-4 py-1 font-black uppercase rotate-2">Populaire</div>
+        <h3 class="text-4xl font-black uppercase">Le Classique</h3>
+        <p class="font-bold text-lg">La base solide pour devenir un pro de la route.</p>
+        <div class="text-6xl font-black">899€</div>
+        <ul class="font-bold space-y-2"><li>✓ Code en ligne</li><li>✓ 30h de conduite</li><li>✓ Simulateur VR</li></ul>
+        <button class="mt-auto bg-electric-purple text-white border-4 border-black p-4 font-black uppercase shadow-hard hover:shadow-none transition-all">Choisir</button>
+      </div>
+      <div class="card-white neo-border-thick p-8 shadow-hard flex flex-col gap-6 bg-white">
+        <h3 class="text-4xl font-black uppercase">Le Zen</h3>
+        <p class="font-bold text-lg">Apprends à ton rythme, sans pression aucune.</p>
+        <div class="text-6xl font-black">1299€</div>
+        <ul class="font-bold space-y-2"><li>✓ Coach personnel</li><li>✓ Heures illimitées*</li><li>✓ Examen garanti</li></ul>
+        <button class="mt-auto bg-electric-purple text-white border-4 border-black p-4 font-black uppercase shadow-hard hover:shadow-none transition-all">Choisir</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-neo-black text-white py-16 px-6 border-t-5 border-black">
+  <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-12">
+    <div class="max-w-sm">
+      <div class="text-4xl font-extrabold tracking-tighter mb-6">
+        DRIVE ACADEMY<span class="text-vibrant-yellow">.</span>
+      </div>
+      <p class="font-bold opacity-80 mb-8">La première auto-école qui ne ressemble pas à une salle d'attente de dentiste. Rejoins le mouvement.</p>
+      <div class="flex gap-4">
+        <div class="w-12 h-12 bg-vibrant-yellow border-3 border-white flex items-center justify-center text-black font-black cursor-pointer hover:scale-110 transition-transform">IG</div>
+        <div class="w-12 h-12 bg-electric-purple border-3 border-white flex items-center justify-center text-white font-black cursor-pointer hover:scale-110 transition-transform">TT</div>
+        <div class="w-12 h-12 bg-white border-3 border-black flex items-center justify-center text-black font-black cursor-pointer hover:scale-110 transition-transform">YT</div>
+      </div>
+    </div>
+    
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-12 flex-1 md:ml-12">
+      <div>
+        <h5 class="text-vibrant-yellow font-black uppercase text-xl mb-4">Naviguer</h5>
+        <ul class="font-bold space-y-2">
+          <li><a class="hover:underline" href="#">Accueil</a></li>
+          <li><a class="hover:underline" href="#vehicules">Véhicules</a></li>
+          <li><a class="hover:underline" href="#offres">Tarifs</a></li>
+          <li><a class="hover:underline" href="#equipe">Staff</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="text-vibrant-yellow font-black uppercase text-xl mb-4">Contact</h5>
+        <ul class="font-bold space-y-2">
+          <li>128 Boulevard de la Vitesse</li>
+          <li>75011 Paris, FR</li>
+          <li>01 23 45 67 89</li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="text-vibrant-yellow font-black uppercase text-xl mb-4">Horaires</h5>
+        <ul class="font-bold space-y-2">
+          <li>Lun - Ven : 08h00 - 20h00</li>
+          <li>Samedi : 09h00 - 18h00</li>
+          <li>Dimanche : <span class="text-electric-purple">Fermé</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="max-w-7xl mx-auto mt-16 pt-8 border-t border-white/20 text-center font-bold">
+    © 2026 DRIVE ACADEMY. ALL RIGHTS RESERVED.
+  </div>
+</footer>
+
+</body>
+</html>
